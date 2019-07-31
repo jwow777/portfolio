@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Тестовое задание</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<script src="js/parallax.js"></script>
+</head>
+<body>
+<!-- Menu -->
+	<nav>
+		<ul>
+			<li><a class="slide1" href="#slide1">1</a></li>
+			<li><a class="slide2" href="#slide2">2</a></li>
+			<li><a class="slide3" href="#slide3">3</a></li>
+		</ul>
+	</nav>
+<!-- End Menu -->
+	<div class="wrapper">
+<!-- First Slide -->
+		<section id="slide1">
+			<h1>Всегда ли цели терапии СД2<span>на поверхности?</span></h1>
+			<div class="feature1">
+				<h2>Цель по HbA1c</h2>
+				<span class="pulse1"></span>
+				<img id="ellipse_top" src="img/ellipse_top.png"/>
+			</div>
+			<div class="feature2">
+				<h2>Гипогликемия</h2>
+				<span class="pulse2"></span>
+				<img id="ellipse_left" src="img/ellipse_left.png"/>
+			</div>
+			<div class="feature3">
+				<h2>СС риски</h2>
+				<span class="pulse3"></span>
+				<img id="ellipse_right" src="img/ellipse_right.png"/>
+			</div>
+			<div class="feature4">
+				<h2>Осложнения СД</h2>
+				<span class="pulse4"></span>
+				<img id="ellipse_bottom" src="img/ellipse_bottom.png"/>
+			</div>
+		</section>
+<!-- Second Slide -->
+		<section id="slide2">
+			<div id="parallax">
+				<img id="ice_cube_1" src="img/ice_top_right.png" alt="ice_cube" />
+				<img id="ice_cube_2" src="img/ice_top_left.png" alt="ice_cube" />
+				<img id="ice_cube_3" src="img/ice_bottom_left.png" alt="ice_cube" />
+				<img id="ice_cube_4" src="img/ice_bottom_right.png" alt="ice_cube" />
+				<h1>Основа терапии — <span>патогенез СД2</span></h1>
+			</div>
+		</section>
+<!-- Third Slide -->
+		<section id="slide3">
+			<div>
+				<img id="ice_cube_5" src="img/ice_top_left2.png" alt="ice_cube" />
+				<img id="ice_cube_6" src="img/ice_top_right2.png" alt="ice_cube" />
+				<img id="ice_cube_7" src="img/ice_bottom_left2.png" alt="ice_cube" />
+			</div>
+			<h2>Звенья патогенеза СД2</h2>
+			<div class="column1">
+				<div class="paragraph">
+					<div class="image_place_l">
+						<img class="small_circle" src="img/circle.png">
+						<img id="bowels" src="img/bowels.png">
+					</div>
+					<div class="sub_div_l">
+						<p class="big_number">8</p>
+    					<p class="name_string">Микрофлора</p>
+    					<p class="name_string">кишечника</p>
+    				</div>
+    			</div>
+    			<div class="paragraph" style="padding-top: 10px;">
+					<div class="image_place_l">
+						<img class="small_circle" src="img/circle.png">
+						<img id="infection" src="img/infection.png">
+					</div>
+					<div class="sub_div_l">
+						<p class="big_number">9</p>
+    					<p class="name_string">Нарушение иммунной</p>
+    					<p class="name_string">регуляции/воспаление</p>
+    				</div>
+    			</div>
+   				<div class="sub_div_l" style="padding: 20px 10px 5px;">
+   					<p class="small_text">↓ амилин</p>
+   				</div>
+   				<div class="sub_div_l" style="padding: 5px 40px;">
+   					<img class="arrow" id="arrow9-10" src="img/arrow9-10.png">
+   				</div>
+    			<div class="paragraph">
+					<div class="image_place_l">
+						<img class="small_circle" src="img/circle.png">
+						<img id="stomach" src="img/stomach.png">
+					</div>
+					<div class="sub_div_l">
+						<p class="big_number">10</p>
+    					<p class="name_string">Желудок</p>
+    				</div>
+    			</div>
+			</div>
+			<div class="column2">
+				<div class="main_paragraph_c">
+					<div class="sub_div_c">
+						<p class="big_number" style="display: inline-block;">1</p>
+    					<p id="name_big_string">β-клетки</p>
+    				</div>
+    				<div class="image_place_c">
+						<img id="big_circle" src="img/circle.png">
+						<p id="big_b">β</p>
+					</div>
+    			</div>
+    			<div>
+    				<div class="small_column_l">
+    					<img class="arrow2" id="arrow1-2" src="img/arrow1-2.png" alt=""/>
+  						<div style="padding: 5px 0;">
+    						<p class="big_number">2</p>
+    						<p class="name_string">↓ инкретинового</p>
+   							<p class="name_string">эффекта</p>
+  						</div>
+  						<img class="arrow2" id="arrow2-11" src="img/arrow2-11.png" alt=""/>			
+    				</div><div class="small_column_c">
+    					<img class="arrow2" src="img/arrow1-11.png" height="215" alt="">	
+    				</div><div class="small_column_r">
+    					<img class="arrow2" id="arrow1-3" src="img/arrow1-2.png" alt=""/>
+  						<div style="padding: 5px 0;">
+     						<p class="big_number">3</p>
+    						<p class="name_string">Дефект α-клеток</p>
+ 						</div>
+ 						<img class="arrow2" id="mini-arrow" src="https://i.ibb.co/D973WnN/arrow3-11.png"alt=""/>
+ 						<p class="small_text" style="padding: 8px 0;">↑ глюкагон</p>
+ 						<img class="arrow2" id="arrow3-11" src="img/arrow3-11-2.png"alt=""/>			
+    				</div>
+    			</div>
+    			<div>
+          			<p id="footer_string">Гипергликемия</p>
+    				<div class="double_arrows">
+						<img style="padding-right: 7px;" src="img/arrow2-11-2.png" alt=""/>
+						<img style="transform: rotate(180deg); padding-right: 7px;" src="img/arrow2-11-2.png" alt=""/>
+					</div>
+					<div class="paragraph" style="padding-right: 137px;">
+						<div class="image_place_l">
+							<img class="small_circle" src="img/circle.png">
+							<img id="kidney" src="img/kidney.png">
+						</div>
+						<div class="sub_div_l">
+							<p class="big_number">11</p>
+    						<p class="name_string">Почки</p>
+    					</div>
+    				</div>
+				</div>
+			</div>
+			<div class="column3">
+				<div>
+					<div>
+						<div class="image_place_r">
+							<img class="small_circle" src="img/circle.png">
+							<img id="brain" src="img/brain.png">
+						</div>
+						<div class="sub_div_r">
+							<p class="big_number">7</p>
+    						<p class="name_string">Головной мозг</p>
+    						<div class="double_arrows">
+								<img src="img/arrow2-11-2.png" alt=""/>
+								<img style="transform: rotate(180deg);" src="img/arrow2-11-2.png" alt=""/>
+							</div>
+    					</div>
+    				</div>			
+				</div>
+				<div id="right_gradient">
+					<div id="insulin">
+    					<p class="small_text">Инсулинорезистентность</p>
+    				</div>
+					<div class="paragraph">
+						<div class="image_place_r">
+							<img class="small_circle" src="img/circle.png">
+							<img id="liver" src="img/liver.png">
+						</div>
+						<div class="sub_div_r">
+							<p class="big_number">6</p>
+    						<p class="name_string">Печень</p>
+    					</div>
+    				</div>
+					<div class="paragraph">
+						<div class="image_place_r">
+							<img class="small_circle" src="img/circle.png">
+							<img id="muscle" src="img/muscle.png">
+						</div>
+						<div class="sub_div_r">
+							<p class="big_number">5</p>
+    						<p class="name_string">Мышцы</p>
+    					</div>
+    				</div>
+					<div class="paragraph">
+						<div class="image_place_r">
+							<img class="small_circle" src="img/circle.png">
+							<img id="lipid" src="img/lipid.png">
+						</div>
+						<div class="sub_div_r">
+							<p class="big_number">4</p>
+    						<p class="name_string">Жировые клетки</p>
+    					</div>
+    				</div>
+    			</div>
+			</div>
+			<div>
+				<div class="arrow arrowb-8-1">
+					<img style="width: 110px;" src="img/arrowb-8.png" alt="">
+					<img id="arrowb-8" src="img/arrowb-8.png" alt="">
+				</div>
+				<div class="arrow arrowb-8-2">
+					<img style="width: 110px;" src="img/arrowb-8.png" alt="">
+					<img id="arrowb-8" src="img/arrowb-8.png" alt="">
+				</div>
+				<div class="arrow arrowb-9-1">
+					<img style="width: 135px;" src="img/arrowb-9.png" alt="">
+					<img id="arrowb-9" src="img/arrowb-9.png" alt="">
+				</div>
+				<div class="arrow arrowb-9-2">
+					<img style="width: 135px;" src="img/arrowb-9.png" alt="">
+					<img id="arrowb-9" src="img/arrowb-9.png" alt="">
+				</div>
+				<div class="arrow arrowb-a">
+					<img style="width: 180px;" src="img/arrowb-a.png" alt="">
+				</div>
+				<div class="arrow arrow9-11">
+					<img style="width: 95px;" src="img/arrow9-11.png" alt="">
+				</div>
+				<div class="arrow arrow10-11">
+					<img style="width: 80px;" src="img/arrow10-11.png" alt="">
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<div id="footer_text">
+			<p>Листайте вниз</p>
+			<img id="footer_arrow" src="img/arrow.png" alt="">
+		</div>
+		<div id="footer_image">
+			<img id="footer_image1" src="img/rectangle1.png" alt="">
+			<img id="footer_image2" src="img/rectangle2.png" alt="">
+		</div>
+	</footer>
+</body>
+</html>

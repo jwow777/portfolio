@@ -1,0 +1,628 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Structure */
+
+html { 
+    overflow-y: scroll;
+    background-color: #333;
+    }
+
+body {
+    width: 1024px;
+}
+
+.wrapper {
+    position: relative;
+    width: inherit;
+}
+
+#slide1, #slide2, #slide3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 768px;
+}
+
+/* Menu */
+
+nav {
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    right: 25px;
+    margin-top: -30px;
+}
+
+nav li {
+    position: relative;
+    height: 20px;
+}
+
+nav a {
+    display: block;
+    width: 18px;
+    height: 18px;
+    text-indent: -9999px;
+    background: transparent url('../img/ellipse_menu_default.png') 2px 2px no-repeat;
+    background-size: 75% 75%;
+}
+
+nav a:hover, nav a.active {
+    background: transparent url('../img/ellipse_menu_active.png') 2px 2px no-repeat;
+    background-size: 75% 75%;
+}
+
+/* Text */
+
+h1 {
+    font-family: Gotham Pro, sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    color: #0d319c;
+}
+
+footer {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    text-align: center;
+    width: inherit;
+}
+
+footer p {
+    color: #fff;
+    font-family: Gotham pro, sans-serif;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+#footer_text {
+    position: absolute; 
+    bottom: 20px; 
+    width: 100%; 
+    z-index: 3;
+}
+
+/* First Slide */
+
+#slide1 {
+    background-image: url(../img/bg1.jpg);
+}
+
+#slide1 h1 {
+    color: #0d319c;
+    padding: 140px 75px 0;
+}
+
+#slide1 h1 span, #slide2 h1 span  {
+    display: block;
+}
+
+/* Image */
+
+.feature1, .feature2, .feature3, .feature4 {
+    position: absolute;
+    text-align: center;
+}
+
+.feature1 {
+    top: 279px;
+    right: 268px;
+    text-align: none;
+}
+
+.feature1 h2 {
+    float: right;
+    padding-left: 35px;
+}
+
+.feature2 {
+    top: 406px;
+    left: 218px;
+    width: 140px;
+}
+
+.feature3 {
+    top: 487px;
+    right: 152px;
+    width: 90px;
+}
+
+.feature4 {
+    top: 510px;
+    left: 365px;
+    width: 170px;
+}
+
+#ellipse_top {
+    position: absolute;
+    top: -15px;
+    right: 143px;
+    height: 50px;
+}
+
+#ellipse_left {
+    position: absolute;
+    top: 22px;
+    left: 56px;
+    height: 27px;
+}
+
+#ellipse_right {
+    position: absolute;
+    top: 29px;
+    left: 39px;
+    height: 17px;
+}
+
+#ellipse_bottom {
+    position: absolute;
+    top: 27px;
+    left: 114px;
+    height: 17px;
+}
+
+#footer_arrow {
+    height: 22px;
+}
+
+#footer_image {
+    margin-top: -180px;
+}
+
+#footer_image1 {
+    position: relative; 
+    top: 110px; 
+    height: 99px;
+}
+
+#footer_image2 {
+    height: 110px;
+}
+
+/* Animate */
+
+.pulse1, .pulse2, .pulse3, .pulse4 {
+    position: absolute;
+    display: block; 
+    border-radius: 50%; 
+    background: radial-gradient(14px, #de791b, #cf1437); 
+    opacity: 0.9;  
+    cursor: pointer; 
+    box-shadow: 0 0 0 rgba(207,20,55, 0.4);  
+    animation: pulse 1s infinite;
+}
+
+
+.pulse1 {
+    margin-top: 2px;
+    width: 15px; 
+    height: 15px;
+}
+
+.pulse2 {
+    margin: 10px 64px 0;
+    width: 11px; 
+    height: 11px;
+}
+
+.pulse3, .pulse4 {
+    margin: 15px 45px 0;
+    width: 5px; 
+    height: 5px;
+}
+
+.pulse4 {
+    margin: 13px 120px 0;
+}
+
+@keyframes pulse {
+  0% { 
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  } 70% {       
+        box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+  } 100% {
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+/* Second Slide */
+
+#slide2 {
+    background-image: url(../img/bg2.jpg);
+}
+
+/* Image */
+
+#ice_cube_1 {
+    position: absolute;
+    top: 760px;
+    left: 876px;
+}
+
+#ice_cube_2 {
+    position: absolute;
+    top: 870px;
+    left: 80px;
+}
+
+#ice_cube_3 {
+    position: absolute;
+    top: 1150px;
+    left: 230px;
+}
+
+#ice_cube_4 {
+    position: absolute;
+    top: 1300px;
+    left: 710px;
+}
+
+/* Parallax */
+
+#parallax {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+
+#parallax h1 {
+    position: absolute;
+    top: 960px;
+    left: 262px;
+    height: 110px;
+    width: 500px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+}
+
+/* Third Slide */
+
+#slide3 {
+    background-image: url(../img/bg3.jpg);
+    color: #fff;
+    width: 100%;
+    font-family: lato;
+}
+
+#slide3 h2 {
+    font-family: Gotham Pro, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    padding: 115px 0 0 85px;
+}
+
+/* Stucture */
+
+.column1, .column2, .column3 {
+    box-sizing: inherit; 
+    display: inline-block; 
+    padding: 5px 0px;
+    vertical-align: top; 
+}
+
+/* Image */
+
+#bowels {
+    position: relative; 
+    top: -60px; 
+    height: 60px;
+}
+
+#brain {
+    position: relative; 
+    top: -52px; 
+    height: 40px;
+}
+
+#infection {
+    position: relative; 
+    top: -56px; 
+    height: 50px;
+}
+
+#kidney {
+    position: relative; 
+    top: -60px; 
+    left: -5px; 
+    height: 50px;
+}
+
+#lipid {
+    position: relative; 
+    top: -56px; 
+    height: 50px;
+}
+
+#liver {
+    position: relative; 
+    top: -50px; 
+    height: 45px;
+}
+
+#muscle {
+    position: relative; 
+    top: -52px; 
+    height: 40px;
+}
+
+#stomach {
+    position: relative; 
+    top: -60px; 
+    height: 50px;
+}
+
+#ice_cube_5 {
+    position: absolute;
+    height: 38px;
+    top: 1640px;
+    left: 0px;
+}
+
+#ice_cube_6 {
+    position: absolute;
+    height: 101px;
+    top: 1760px;
+    left: 936px;
+    }
+
+#ice_cube_7 {
+    position: absolute;
+    height: 180px;
+    bottom: 0px;
+    left: 150px;
+}
+
+.small_circle {
+    display: block; 
+    height: 62px; 
+    opacity: 0.25;
+}
+
+.double_arrows img {
+    height: 25px; filter: invert(100%);
+}
+
+.arrow {
+    filter: invert(100%);
+}
+
+.arrow2 {
+    filter: invert(100%);
+    padding: 0 8px;
+}
+
+
+/* Text */
+
+p {
+    font-family: Lato;
+}
+
+.big_number {
+    font-size: 36px; 
+}
+
+.name_string {
+    font-size: 20px;
+}
+
+.sub_div_r {
+    text-align: left;
+}
+
+.small_text {
+    font-size: 15px;
+}
+
+/* Arrow */
+
+#arrow1-2, #arrow1-3 {
+    height: 70px;
+}
+
+#arrow2-11 {
+    height: 60px;
+}
+
+#arrow3-11 {
+    height: 30px;
+}
+
+#arrow9-10 {
+    height: 23px;
+}
+
+.arrow9-11 {
+    position: absolute; 
+    top: 1980px; 
+    left: 330px;
+}
+
+
+.arrow10-11 {
+    position: absolute; 
+    top: 2025px; 
+    left: 345px
+}
+
+#mini-arrow {
+    height: 17px;
+}
+
+#arrowb-8 {
+    width: 110px;
+    position: absolute; 
+    top: 12px; 
+    transform: rotate(180deg);
+}
+
+.arrowb-8-1 {
+    position: absolute; 
+    top: 1763px; 
+    left: 340px;
+}
+
+.arrowb-8-2 {
+    position: absolute; 
+    top: 1760px; 
+    left: 585px; 
+    transform: rotate(15deg);
+}
+
+.arrowb-9-1 {
+    position: absolute; 
+    top: 1780px; 
+    left: 330px;
+}
+
+.arrowb-9-2 {
+    position: absolute; 
+    top: 1780px; 
+    left: 570px; 
+    transform: rotate(60deg);
+}
+
+#arrowb-9 {
+    width: 135px; 
+    position: absolute; 
+    top: 12px; 
+    left: 5px; 
+    transform: rotate(180deg);
+}
+
+.arrowb-a {
+    position: absolute; 
+    top: 1807px; 
+    left: 295px;
+}
+
+/* Stucture column 1 */
+
+.column1 {
+    width: 335px; 
+    margin: 75px 0 0 5px;
+}
+
+.image_place_l {
+    float: right; 
+    padding: 0 10px 0 10px; 
+    height: 100%; 
+    text-align: center;
+}
+
+/* Text */
+
+.sub_div_l {
+    text-align: right;
+}
+
+/* Stucture column 2 */
+
+.column2 {
+    width: 360px; 
+    height: 480px;
+    text-align: center;
+}
+
+.image_place_c { 
+    padding: 0 10px; 
+    height: 100%; 
+}
+
+.main_paragraph_c {
+    height: 120px;
+    text-align: center;
+}
+
+.small_column_l, .small_column_c,.small_column_r {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.small_column_l {
+    width: 45%; 
+    text-align: right;
+}
+
+.small_column_c {
+    width: 7%; 
+    text-align: center;
+}
+
+.small_column_r {
+    width: 45%; 
+    text-align: left;
+}
+
+/* Image */
+
+#big_circle {
+    height: 80px; 
+    opacity: 0.25;
+}
+
+/* Text */
+
+#name_big_string {
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 10px; 
+}
+
+#footer_string {
+    font-size: 25px;
+}
+
+#big_b {
+    position: relative;
+    top: -75px;
+    font-size: 66px;
+    font-weight: 600;
+}
+
+/* Stucture column 3 */
+
+.column3 {
+    width: 260px; 
+    padding: 10px 0px; 
+    margin-top: 75px;
+}
+
+#right_gradient {
+    background: linear-gradient(to bottom, rgba(209,209,209,.15) 0%, rgba(240,47,23,0) 75%); 
+    border-radius: 50px 50px 0 0;
+}
+
+.paragraph {
+    height: 85px;
+}
+
+.image_place_r {
+    float: left; 
+    padding: 0 10px; 
+    height: 100%; 
+    text-align: center;
+}
+
+.double_arrows {
+    padding: 10px;
+}
+
+/* Text */
+
+.sub_div_r {
+    text-align: left;
+}
+
+#insulin {
+    text-align: center; padding: 20px 0;
+}
