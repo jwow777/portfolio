@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Fivo Sans';
+    src: local('Fivo Sans Light'), local('FivoSans-Light'), url('../fonts/Fivosanslight.woff2') format('woff2'), url('../fonts/Fivosanslight.woff') format('woff'), url('../fonts/Fivosanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fivo Sans';
+    src: local('Fivo Sans Regular'), local('FivoSans-Regular'), url('../fonts/Fivosansregular.woff2') format('woff2'), url('../fonts/Fivosansregular.woff') format('woff'), url('../fonts/Fivosansregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fivo Sans';
+    src: local('Fivo Sans Bold'), local('FivoSans-Bold'), url('../fonts/Fivosansbold.woff2') format('woff2'), url('../fonts/Fivosansbold.woff') format('woff'), url('../fonts/Fivosansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fivo Sans';
+    src: local('Fivo Sans Heavy'), local('FivoSans-Heavy'), url('../fonts/Fivosansheavy.woff2') format('woff2'), url('../fonts/Fivosansheavy.woff') format('woff'), url('../fonts/Fivosansheavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
