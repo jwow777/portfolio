@@ -461,7 +461,8 @@ p {
 #arrowb-8 {
     width: 110px;
     position: absolute; 
-    top: 12px; 
+    top: 12px;
+    left: 0;
     transform: rotate(180deg);
 }
 
